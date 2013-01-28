@@ -1,0 +1,47 @@
+<html>
+<body>
+
+        
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+
+     adjectivesList = new XMLHttpRequest();
+     adjectivesList.open("GET",'http://keithzg.ca/arpg/adjectives',false);
+     adjectivesList.send(null);
+     adjectivesArray = adjectivesList.responseText.split('\n');
+
+     nounsList = new XMLHttpRequest();
+     nounsList.open("GET",'http://keithzg.ca/arpg/nouns',false);
+     nounsList.send(null);
+     nounsArray = nounsList.responseText.split('\n');
+   
+     suffixesList = new XMLHttpRequest();
+     suffixesList.open("GET",'http://keithzg.ca/arpg/suffixes',false);
+     suffixesList.send(null);
+     suffixesArray = suffixesList.responseText.split('\n');
+     
+     function randomItem(){
+     var adjective = adjectivesArray[Math.floor(Math.random()*adjectivesArray.length)]
+     var noun = nounsArray[Math.floor(Math.random()*nounsArray.length)]
+     var suffix = suffixesArray[Math.floor(Math.random()*suffixesArray.length)]
+     var item = adjective + " " + noun + " of " + suffix
+     //alert(item);
+     document.getElementById('name').innerHTML = item;
+     }
+  
+// -->
+</script>
+
+
+
+
+<input type='button' onclick='randomItem()' value="click here"/>
+<p>You have found a <strong id='name'>this text</strong>. </p>
+
+</p>
+
+    
+
+</body>
+</html>
