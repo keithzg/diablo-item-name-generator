@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Diablo-style item name generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../style/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        font-family: 'IM Fell English SC', serif;
+      }
+      .navbar-search .search-query {
+	font-family: 'IM Fell English SC', serif;
+      }
+    </style>
+    <link href="../style/bootstrap-responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+English+SC' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+  <SCRIPT LANGUAGE="JavaScript">
+<!-- 
+
+     adjectivesList = new XMLHttpRequest();
+     adjectivesList.open("GET",'http://keithzg.ca/arpg/adjectives',false);
+     adjectivesList.send(null);
+     adjectivesArray = adjectivesList.responseText.split('\n');
+
+     nounsList = new XMLHttpRequest();
+     nounsList.open("GET",'http://keithzg.ca/arpg/nouns',false);
+     nounsList.send(null);
+     nounsArray = nounsList.responseText.split('\n');
+   
+     suffixesList = new XMLHttpRequest();
+     suffixesList.open("GET",'http://keithzg.ca/arpg/suffixes',false);
+     suffixesList.send(null);
+     suffixesArray = suffixesList.responseText.split('\n');
+     
+     function randomItem(){
+     var adjective = adjectivesArray[Math.floor(Math.random()*adjectivesArray.length)]
+     var noun = nounsArray[Math.floor(Math.random()*nounsArray.length)]
+     var suffix = suffixesArray[Math.floor(Math.random()*suffixesArray.length)]
+     var item = adjective + " " + noun + " of " + suffix
+     //alert(item);
+     document.getElementById('name').innerHTML = item;
+     }
+  
+// -->
+</script>
+  
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Diablo-style item name generator</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="https://github.com/keithzg/diablo-item-name-generator">Github</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+       <p><input type='button' class="btn btn-large btn-warning" onclick='randomItem()' value="Loot!"/></p>
+      <p><h3><i>You have found:</i></h3></p>
+      <p><h1><strong id='name'>?</strong></h1></p>
+
+    </div> <!-- /container -->
+
+   
+
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../script/jquery.js"></script>
+    <script src="../script/bootstrap-transition.js"></script>
+    <script src="../script/bootstrap-alert.js"></script>
+    <script src="../script/bootstrap-modal.js"></script>
+    <script src="../script/bootstrap-dropdown.js"></script>
+    <script src="../script/bootstrap-scrollspy.js"></script>
+    <script src="../script/bootstrap-tab.js"></script>
+    <script src="../script/bootstrap-tooltip.js"></script>
+    <script src="../script/bootstrap-popover.js"></script>
+    <script src="../script/bootstrap-button.js"></script>
+    <script src="../script/bootstrap-collapse.js"></script>
+    <script src="../script/bootstrap-carousel.js"></script>
+    <script src="../script/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
