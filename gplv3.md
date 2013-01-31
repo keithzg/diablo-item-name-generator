@@ -1,6 +1,3 @@
-This project is licensed under the GNU General Public License v3,
-as copied below.
-
 GNU GENERAL PUBLIC LICENSE
 ==========================
 
