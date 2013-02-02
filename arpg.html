@@ -41,7 +41,7 @@
 
     <!-- Fav and touch icons -->
 
-                                   <link rel="shortcut icon" href="./images/theft_16x16.ico">
+                                   <link rel="shortcut icon" href="./images/cc_chest_32x32.png">
   </head>
 
   <body>
@@ -70,7 +70,8 @@
      var suffix = suffixesArray[Math.floor(Math.random()*suffixesArray.length)]
      var item = adjective + " " + noun + " of " + suffix
      //alert(item);
-     document.getElementById('name').innerHTML = item;
+     document.getElementById('item_name').innerHTML = item;
+     document.getElementById('item_image').innerHTML = "images/cc_chest_32x32.png";
      }
   
 // -->
@@ -99,7 +100,8 @@
 
        <p><input type='button' class="btn btn-xlarge btn-warning" onclick='randomItem()' value="Loot!"/></p>
       <p><h3><i>You have found:</i></h3></p>
-      <p><h1><strong id='name'>?</strong></h1></p>
+      <p><h1><strong id='item_name'>?</strong></h1></p>
+      <p><img src="" id="item_image">
 
     </div> <!-- /container -->
 
