@@ -65,6 +65,7 @@
      suffixesArray = suffixesList.responseText.split('\n');
      
      function randomItem(){
+     document.getElementById('item_image').src = "images/cc_chest_32x32.png";
      var adjective = adjectivesArray[Math.floor(Math.random()*adjectivesArray.length)]
      var noun = nounsArray[Math.floor(Math.random()*nounsArray.length)]
      var suffix = suffixesArray[Math.floor(Math.random()*suffixesArray.length)]
@@ -72,8 +73,19 @@
      //alert(item);
      document.getElementById('item_name').innerHTML = item;
      var item_pic = "images/" + noun + ".png"
-     document.getElementById('item_image').src = item_pic;
+     var response = UrlExists(item_pic)
+     if (response == true)
+      {document.getElementById('item_image').src = item_pic;}
      }
+     
+     
+     function UrlExists(url)
+      {
+      var http = new XMLHttpRequest();
+      http.open('HEAD', url, false);
+      http.send();
+      return http.status!=404;
+      }
   
 // -->
 </script>
