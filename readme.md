@@ -8,7 +8,9 @@ Hey! Keith here, "project" lead and such. Welcome to the readme!
 
 ## Licence / License
 
-The code in this project is licensed under the GPLv3, with the "or later" clause. I might add Copyleft.next to that if possible, and maybe the AGPL makes sense, but we'll figure that out later. A copy of the General Public License is provided in the source repository.
+The pure text in this project---ie. the adjectives, nouns and suffixes files---are licensed under the copyleft-next 0.2.1 license. The same is true of the python code.
+
+All HTML and JavaScript, however, are licensed under the AGPLv3.
 
 Many images are from http://opengameart.org/content/32x32-fantasy-tileset and are licensed under Creative Commons Attribution Share Alike 3.0 or later.
 
