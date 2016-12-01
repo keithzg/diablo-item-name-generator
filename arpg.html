@@ -50,17 +50,17 @@
 <!-- 
 
      adjectivesList = new XMLHttpRequest();
-     adjectivesList.open("GET",'http://keithzg.ca/arpg/adjectives',false);
+     adjectivesList.open("GET",'adjectives',false);
      adjectivesList.send(null);
      adjectivesArray = adjectivesList.responseText.split('\n');
 
      nounsList = new XMLHttpRequest();
-     nounsList.open("GET",'http://keithzg.ca/arpg/nouns',false);
+     nounsList.open("GET",'nouns',false);
      nounsList.send(null);
      nounsArray = nounsList.responseText.split('\n');
    
      suffixesList = new XMLHttpRequest();
-     suffixesList.open("GET",'http://keithzg.ca/arpg/suffixes',false);
+     suffixesList.open("GET",'suffixes',false);
      suffixesList.send(null);
      suffixesArray = suffixesList.responseText.split('\n');
      
